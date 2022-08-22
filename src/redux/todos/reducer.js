@@ -40,7 +40,7 @@ const todoReducer = (state = initialState, action) => {
       const { todoId, color } = action.payload;
 
       return state.map((todo) => {
-        if (state.id === todoId) {
+        if (todo.id === todoId) {
           return {
             ...todo,
             color: color,
