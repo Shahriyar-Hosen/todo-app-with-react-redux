@@ -26,7 +26,7 @@ const todoReducer = (state = initialState, action) => {
 
     case TOGGLED:
       return state.map((todo) => {
-        if (state.id === action.payload) {
+        if (todo.id === action.payload) {
           return {
             ...todo,
             completed: !todo.completed,
