@@ -15,11 +15,16 @@ const filterReducer = (state = initialState, action) => {
         case "added":
           return {
             ...state,
-            color: color,
+            colors: [...state.colors, color],
           };
 
         case "removed":
-          return state.color.filter((existingColor) => existingColor !== color);
+          return {
+            ...state,
+            colors: state.colors.filter(
+              (existingColor) => existingColor !== color
+            ),
+          };
 
         default:
           return state;
