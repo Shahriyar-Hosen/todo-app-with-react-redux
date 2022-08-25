@@ -1,9 +1,9 @@
 import React from "react";
 import cancel from "../assets/images/cancel.png";
 import { useDispatch } from "react-redux";
-import { deleted } from "../redux/todos/action";
 import updateStatus from "../redux/todos/thunk/updateStatus";
 import updateColor from "../redux/todos/thunk/updateColor";
+import deleteTodo from "../redux/todos/thunk/deleteTodo";
 
 const Todo = ({ todo }) => {
   const { id, text, completed, color } = todo;
@@ -18,7 +18,7 @@ const Todo = ({ todo }) => {
   };
 
   const handleDeleted = (todoId) => {
-    dispatch(deleted(todoId));
+    dispatch(deleteTodo(todoId));
   };
 
   return (
