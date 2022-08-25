@@ -42,7 +42,7 @@
     },
     {
       "text": "Test",
-      "completed": false,
+      "completed": true,
       "id": 8
     }
   ]
