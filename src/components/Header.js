@@ -39,6 +39,7 @@ const Header = () => {
           type="text"
           placeholder="Type your todo"
           className="w-full text-lg px-4 py-1 border-none outline-none bg-gray-100 text-gray-500"
+          value={input}
           onChange={inputHandler}
         />
         <button

@@ -47,9 +47,15 @@
       "color": "yellow"
     },
     {
-      "text": "dsafgadf",
+      "text": "asdfadsf",
       "completed": false,
       "id": 9
+    },
+    {
+      "text": "dafdsfads",
+      "completed": false,
+      "id": 10,
+      "color": "yellow"
     }
   ]
 }

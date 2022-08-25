@@ -12,7 +12,6 @@ const updateStatus = (todoId, status) => {
       },
     });
     const todo = await res.json();
-    console.log(todo);
 
     //   dispatch
     dispatch(toggled(todo.id));

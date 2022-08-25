@@ -12,7 +12,6 @@ const updateColor = (todoId, colorName) => {
       },
     });
     const todo = await res.json();
-    console.log(todo);
 
     //   dispatch
     dispatch(colorSelected(todo.id, colorName));
