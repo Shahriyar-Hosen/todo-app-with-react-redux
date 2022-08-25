@@ -43,7 +43,8 @@
     {
       "text": "Test",
       "completed": true,
-      "id": 8
+      "id": 8,
+      "color": "yellow"
     }
   ]
 }
