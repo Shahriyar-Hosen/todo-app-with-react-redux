@@ -1,2 +1,2 @@
-# Simple Todo Apps
-### Without database API call 
+# Todo Application - Part 2
+### Fetch initial todos from server
