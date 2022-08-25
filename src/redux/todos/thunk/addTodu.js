@@ -9,10 +9,12 @@ const addTodo = (todoText) => {
         completed: false,
       }),
       headers: {
-        "component-type": "application/json; charset=UTF-8",
+        "Content-type": "application/json; charset=UTF-8",
       },
     });
     const todo = await res.json();
+    console.log(todo);
+    
 
     //   dispatch
     dispatch(added(todo.text));
